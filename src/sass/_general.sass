@@ -1,0 +1,35 @@
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  
+  font-family: $font-family
+  
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  // text-shadow:1px 1px 1px rgba(0,0,0,0.004) !important
+
+html
+  color: $text
+  font-size: 10px
+
+  background-color: $bg
+
+a
+  color: $primary
+
+//--------------------
+//  Shared Styles
+//--------------------
+.about, .services, .portfolio, .contact
+  &__title
+    color: $primary
+    font-size: $title-size
+    font-weight: $title-weight
+    text-transform: uppercase
+
+  &__subtitle
+    color: $secondary
+    font-size: $subtitle-size
+    font-weight: $subtitle-weight

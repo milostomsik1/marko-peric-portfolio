@@ -1,0 +1,94 @@
+html(lang="en")
+head
+  meta(charset="UTF-8")
+  meta(name="viewport", content="width=device-width, initial-scale=1.0")
+  meta(http-equiv="X-UA-Compatible", content="ie=edge")
+  title Marko Perić | Portfolio
+  link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+body
+  //hero
+  header.hero
+    h1.hero__headline Hello, I’m 
+      span.hero__headline--primary.hero__headline--bold Marko
+      br
+      span.hero__headline--bold.hero__headline--italic UX UI Designer 
+      br
+      | Based in Switzerland
+  
+  //about
+  .about
+    h2.about__title Something short
+      br
+      | about me
+    p.about__description I am a multidisciplinary designer, focused on WEB, UX UI Design and Branding, based in Ticino, Switzerland. I am a designer with a lot of passion for digital art. 
+    p.about__description I practice user centered design principles basing design decisions on user needs and business goals.
+    p.about__description My tools are pen &amp; paper, Sketch, InVision, Adobe CC and other nifty software when it comes to clickable prototypes. 
+    p.about__description 
+      a.about__link(href="#") Download the vitae
+      |  or network via 
+      a.about__link(href="#") LinkedIn
+      |  and 
+      a.about__link(href="#") XING 
+      |  to learn more about my career and the honors I'd earned for my work.
+    .about__profile-image
+  
+  //services
+  .services
+    h2.services__title Services
+    h4.services__subtitle With passion and love. For you.
+
+    h3.services__service-title Interface design
+    h5.services__service-description Website and mobile application
+    h3.services__service-title User experience
+    h5.services__service-description Where it all comes together
+    h3.services__service-title Branding
+    h5.services__service-description Corporate identities and style guides
+    h3.services__service-title Development
+    h5.services__service-description Front-end development
+  
+  //portfolio
+  .portfolio
+    h2.portfolio__title Portfolio
+    h4.portfolio__subtitle Selected work that has been created with the help of many.
+
+    .portfolio__item
+      img(src="#" alt="D&S Cars")
+    .portfolio__item
+      img(src="#" alt="2")
+    .portfolio__item
+      img(src="#" alt="3")
+    .portfolio__item
+      img(src="#" alt="4")
+    .portfolio__item
+      img(src="#" alt="5")
+    .portfolio__item
+      img(src="#" alt="6")
+    .portfolio__item
+      img(src="#" alt="7")
+    .portfolio__item
+      img(src="#" alt="8")
+
+  //contact
+  .contact
+    h2.contact__title Get in touch
+      br
+      |  with me
+    h3.contact__subtitle Let’s make some magic together.
+
+    form(action="http://formspree.io/you@email.com")
+      input(type="text" placeholder="Name")
+      input(type="email" placeholder="E-mail")
+      input(type="text" placeholder="Subject")
+      textarea(name="", cols="30", rows="10") Message...
+      button Send message
+
+  //footer
+  footer.footer
+    p.footer__copyright © 2017 Marko Peric All rights reserved
+    .footer__social
+      a.footer__social-link(href="#")
+        i.fa.fa-2x.fa-instagram
+      a.footer__social-link(href="#")
+        i.fa.fa-2x.fa-dribbble
+      a.footer__social-link(href="#")
+        i.fa.fa-2x.fa-linkedin
