@@ -76,19 +76,19 @@ body
     h3.contact__subtitle Let’s make some magic together.
 
     form(action="http://formspree.io/you@email.com")
-      input(type="text" placeholder="Name")
-      input(type="email" placeholder="E-mail")
-      input(type="text" placeholder="Subject")
-      textarea(name="", cols="30", rows="10") Message...
-      button Send message
+      input.contact__name(type="text" placeholder="Name")
+      input.contact__email(type="email" placeholder="E-mail")
+      input.contact__subject(type="text" placeholder="Subject")
+      textarea.contact__message(name="", cols="30", placeholder="Message...")
+      button.contact__submit Send message
 
   //footer
   footer.footer
     p.footer__copyright © 2017 Marko Peric All rights reserved
     .footer__social
-      a.footer__social-link(href="#")
+      a.footer__social-link(href="#", title="Instagram")
         i.fa.fa-2x.fa-instagram
-      a.footer__social-link(href="#")
+      a.footer__social-link(href="#", title="Dribbble")
         i.fa.fa-2x.fa-dribbble
-      a.footer__social-link(href="#")
+      a.footer__social-link(href="#", title="LinkedIn")
         i.fa.fa-2x.fa-linkedin

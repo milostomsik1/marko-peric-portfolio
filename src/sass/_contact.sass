@@ -1,2 +1,38 @@
 .contact
-  
+  input, textarea
+    width: 33.3%
+    
+    padding: 1rem 2rem
+
+    color: $text
+    font-size: $input-size
+    font-weight: $input-weight
+
+    background-color: inherit
+
+    border: 1px solid $text
+
+    &::placeholder
+      color: $muted
+
+    &:focus
+      outline-color: $text
+
+  textarea
+    width: 100%
+
+  &__submit
+    padding: 1rem 2rem
+
+    color: $text
+    text-transform: uppercase
+
+    background-color: $primary
+
+    border-radius: 0.3rem
+    border: 0.1rem solid transparent
+
+    cursor: pointer
+
+    &:focus
+      outline-color: darken($primary, 10%)
