@@ -3,20 +3,26 @@
 
   &__item
     width: calc(100% / 3)
-    padding: $margin
+    padding: $margin * 0.6
 
     float: left
 
     cursor: pointer
     transition: all 0.4s
 
+    @include breakpoint(to-laptop)
+      width: calc(100% / 2)
+
+    @include breakpoint(phone)
+      width: 100%
+      
     &:hover 
       transform: scale(0.9)
 
       transition: all 0.4s
 
     &-container
-      margin: -$margin
+      margin: -$margin * 0.6
 
       &::after
         content: ""

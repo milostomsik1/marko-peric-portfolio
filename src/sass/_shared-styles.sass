@@ -3,7 +3,21 @@
   padding-bottom: $block-padding
   margin-left: auto
   margin-right: auto
-  width: 110.4rem
+  width: 114rem
+  
+  @include breakpoint(laptop)
+    width: 97rem
+
+  @include breakpoint(tablet)
+    width: 72rem
+
+  @include breakpoint(phablet)
+    width: 52rem
+
+  @include breakpoint(phone)
+    width: 100%
+    padding-left: 2rem
+    padding-right: 2rem
 
   &__title
     color: $primary
