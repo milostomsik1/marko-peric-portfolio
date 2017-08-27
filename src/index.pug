@@ -39,36 +39,52 @@ body
     h2.services__title Services
     h4.services__subtitle With passion and love. For you.
 
-    h3.services__service-title Interface design
-    h5.services__service-description Website and mobile application
-    h3.services__service-title User experience
-    h5.services__service-description Where it all comes together
-    h3.services__service-title Branding
-    h5.services__service-description Corporate identities and style guides
-    h3.services__service-title Development
-    h5.services__service-description Front-end development
+    .service
+      h3.service__title Interface design
+      h5.service__description Website and mobile application
+    .service
+      h3.service__title User experience
+      h5.service__description Where it all comes together
+    .service
+      h3.service__title Branding
+      h5.service__description Corporate identities and style guides
+    .service
+      h3.service__title Development
+      h5.service__description Front-end development
   
   //portfolio
   .portfolio
     h2.portfolio__title Portfolio
     h4.portfolio__subtitle Selected work that has been created with the help of many.
 
-    .portfolio__item
-      img(src="#" alt="D&S Cars")
-    .portfolio__item
-      img(src="#" alt="2")
-    .portfolio__item
-      img(src="#" alt="3")
-    .portfolio__item
-      img(src="#" alt="4")
-    .portfolio__item
-      img(src="#" alt="5")
-    .portfolio__item
-      img(src="#" alt="6")
-    .portfolio__item
-      img(src="#" alt="7")
-    .portfolio__item
-      img(src="#" alt="8")
+    .portfolio__item-container
+      .portfolio__item
+        a(href="#")
+          img(src="./img/portfolio/ds-cars.png", alt="D&S Cars")
+      .portfolio__item
+        a(href="#")
+          img(src="./img/portfolio/dib-hotel.png", alt="DIB Hotel")
+      .portfolio__item
+        a(href="#")
+          img(src="./img/portfolio/daily-ui.png", alt="Daily UI")
+      .portfolio__item
+        a(href="#")
+          img(src="./img/portfolio/tdi-radio-app.png", alt="TDI Radio App")
+      .portfolio__item
+        a(href="#")
+          img(src="./img/portfolio/art-of-cars.png", alt="Art Of Cars")
+      .portfolio__item
+        a(href="#")
+          img(src="./img/portfolio/marck1-brand.png", alt="Marck1 Brand")
+      .portfolio__item
+        a(href="#")
+          img(src="./img/portfolio/lookback-record.png", alt="Lookback Record")
+      .portfolio__item
+        a(href="#")
+          img(src="./img/portfolio/lookback-record-app.png", alt="Lookback Record App")
+      .portfolio__item
+        a(href="#")
+          img(src="./img/portfolio/ricardo-ch.png", alt="Ricardo.ch")
 
   //contact
   .contact
@@ -77,11 +93,11 @@ body
       |  with me
     h3.contact__subtitle Let’s make some magic together.
 
-    form(action="http://formspree.io/you@email.com")
+    form.contact__form(action="http://formspree.io/you@email.com")
       input.contact__name(type="text" placeholder="Name")
       input.contact__email(type="email" placeholder="E-mail")
       input.contact__subject(type="text" placeholder="Subject")
-      textarea.contact__message(name="", cols="30", placeholder="Message...")
+      textarea.contact__message(name="", placeholder="Message...")
       button.contact__submit Send message
 
   //footer
@@ -89,8 +105,8 @@ body
     p.footer__copyright © 2017 Marko Peric All rights reserved
     .footer__social
       a.footer__social-link(href="#", title="Instagram")
-        i.fa.fa-2x.fa-instagram
+        i.fa.fa-3x.fa-instagram
       a.footer__social-link(href="#", title="Dribbble")
-        i.fa.fa-2x.fa-dribbble
+        i.fa.fa-3x.fa-dribbble
       a.footer__social-link(href="#", title="LinkedIn")
-        i.fa.fa-2x.fa-linkedin
+        i.fa.fa-3x.fa-linkedin

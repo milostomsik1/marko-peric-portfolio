@@ -1,8 +1,28 @@
 .services
-  &__service-title
-    font-size: $service-title-size
-    font-weight: $service-title-weight
-  &__service-description
-    color: $secondary
-    font-size: $service-description-size
-    font-weight: $service-description-weight
+  @at-root .service
+    width: 50%
+    padding-left: $margin
+    margin-bottom: $margin
+
+    float: left
+
+    border-left: 0.2rem solid $primary
+
+    transition: all 0.4s
+
+    &:hover
+      padding-left: $margin * 2
+
+      border-left: 0.5rem solid $primary
+
+      transition: all 0.4s
+
+    &__title
+      font-size: $service-title-size
+      font-weight: $service-title-weight
+
+    &__description
+      color: $secondary
+      font-size: $service-description-size
+      font-weight: $service-description-weight
+      

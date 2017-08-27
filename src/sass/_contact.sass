@@ -1,7 +1,13 @@
 .contact
-  input, textarea
-    width: calc(100% / 3)
-    
+  clear: both
+  
+  &__form
+    display: flex
+
+    flex-wrap: wrap
+    justify-content: space-between
+  
+  &__name, &__email, &__subject, &__message
     padding: 1rem 2rem
 
     color: $text
@@ -10,7 +16,7 @@
 
     background-color: inherit
 
-    border: 1px solid $text
+    border: 0.5px solid $text
 
     &::placeholder
       color: $muted
@@ -18,11 +24,28 @@
     &:focus
       outline-color: $text
 
-  textarea
+    
+  &__name, &__email, &__subject
+    margin: 0 $margin $margin
+
+    flex: 1
+
+    &:first-of-type
+      margin-left: 0
+
+    &:last-of-type
+      margin-right: 0
+
+  &__message
     width: 100%
+    min-height: 18rem
+    margin: 0 0 $margin 0
+
+    resize: none
 
   &__submit
     padding: 1rem 2rem
+    margin: 0 auto
 
     color: $text
     text-transform: uppercase
@@ -33,6 +56,12 @@
     border: 0.1rem solid transparent
 
     cursor: pointer
+    transition: all 0.4s
+
+    &:hover 
+      background-color: darken($primary, 10%)
+      
+      transition: all 0.4s
 
     &:focus
-      outline-color: darken($primary, 10%)
+      outline-color: lighten($primary, 10%)
