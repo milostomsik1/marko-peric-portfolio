@@ -1,5 +1,23 @@
 .about
+  display: flex
+  &-container
+    flex: 2
   &__description
+    margin-bottom: $title-margin * 0.75
+
     font-size: $text-size
     font-weight: $text-weight
     line-height: $text-line-height
+    &:last-of-type
+      margin-bottom: 0
+  
+  &__profile-image
+    margin: 0 $block-padding * 2.5
+
+    flex: 1
+
+    align-self: center
+    img
+      width: 100%
+      height: auto
+      
