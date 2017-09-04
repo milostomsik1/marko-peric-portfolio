@@ -1,7 +1,16 @@
 .about
   display: flex
+  @include breakpoint(to-laptop)
+    flex-wrap: wrap
+
   &-container
     flex: 2
+
+    @include breakpoint(to-laptop)
+      display: block
+      width: 100%
+
+      flex: none
 
   &__title
     margin-bottom: $margin
@@ -16,12 +25,28 @@
       margin-bottom: 0
   
   &__profile-image
-    margin: 0 $block-padding * 2.5
+    margin: 0 8vw
 
     flex: 1
 
     align-self: center
+
+    @include breakpoint(laptop)
+     margin: 0 5vw
+
+    @include breakpoint(to-laptop)
+      display: block
+      width: 100%
+      margin-top: $margin * 2
+
+      text-align: center
+
+    @include breakpoint(tablet)
+      margin-left: 20% 
+      margin-right: 20% 
+
     img
       width: 100%
       height: auto
+      
       

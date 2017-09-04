@@ -1,5 +1,5 @@
 @mixin breakpoint($point)
-  @if $point == desktop
+  @if $point == from-desktop
     @media (min-width: 1280px)
       @content
   @elseif $point == to-desktop
@@ -7,6 +7,9 @@
       @content
   @else if $point == laptop
     @media (min-width: 1024px) and (max-width: 1279px)
+      @content
+  @else if $point == from-laptop
+    @media (min-width: 1024px)
       @content
   @else if $point == to-laptop
     @media (max-width: 1023px)
