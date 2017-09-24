@@ -1,0 +1,62 @@
+.navigation
+  display: flex
+
+  position: fixed
+  top: 2.5rem
+  right: 1rem
+  z-index: 99
+
+  flex-direction: column
+  align-items: flex-end
+
+  opacity: 0.4
+
+  transition: all 0.4s
+
+  &:hover
+    opacity: 1
+
+    transition: all 0.4s
+
+  &__item
+    display: flex
+    margin: 0.5rem 0
+    max-width: 1.5rem
+    height: 1.5rem
+
+    align-items: center
+    justify-content: flex-end
+
+    color: transparent
+    background-color: transparent
+
+    border: 0.2rem solid $primary
+    border-radius: 50%
+
+    overflow: hidden
+    cursor: pointer
+
+    transition: all 0.4s
+
+    &:focus
+      outline: none
+
+    i
+      margin-right: 0.5rem
+
+    span
+      font-size: $navigation-size
+      font-weight: $navigation-weight
+      text-align: right
+      text-transform: uppercase
+
+.currentLink
+  padding: 0 1rem
+  max-width: 100%
+  height: 3rem
+
+  color: $text
+
+  background-color: $primary
+
+  border-radius: 0
