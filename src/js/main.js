@@ -1,14 +1,17 @@
 import '../sass/styles.sass'
 
+// --- NAVIGATION ON CLICK
 $('.navigation__item').on('click', function() {
   $(this).siblings().removeClass('currentLink');
   $(this).addClass('currentLink');
-  console.log($(this));
+
+  var currentLink = '.' + $(this).children('span').get(0).innerHTML.toLowerCase();
+  $(currentLink).get(0).scrollIntoView({behavior: 'smooth'});
 });
 
 
 // --- HOME
-var $home = $('.hero');
+var $home = $('.home');
 
 $home.waypoint(function(direction) {
   if (direction === 'up') {

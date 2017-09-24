@@ -1,12 +1,12 @@
-.hero
+.home
   display: flex
-
   height: 100vh
 
-  background-image: url(../img/hero.png)
-  background-repeat: no-repeat
-  background-position: center center
-  background-size: cover
+  &-wrapper
+    background-image: url(../img/hero.png)
+    background-repeat: no-repeat
+    background-position: center center
+    background-size: cover
 
   &__headline
     align-self: center
@@ -14,9 +14,12 @@
     font-size: $headline-size
     font-weight: $headline-weight
     line-height: $headline-line-height
+
     &--primary
       color: $primary
+
     &--bold
       font-weight: 500
+
     &--italic
       font-style: italic
